@@ -1,0 +1,11 @@
+INDEX VERSION 1.131+E:\Developer\Projekte\Learn_Java\Learn_JavaFX\.metadata\.plugins\org.eclipse.jdt.core
+2716766137.index
+789344348.index
+3811465668.index
+3976432548.index
+2320175084.index
+3720665852.index
+1060445650.index
+1959448977.index
+914188774.index
+2911499352.index
