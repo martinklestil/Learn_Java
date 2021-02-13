@@ -57,9 +57,12 @@ public class MainPanel extends JPanel {
         center.add(h1Label);
         center.add(inputPanel);
         
+        JPanel toDos = new JPanel();
+        toDos.setLayout(new FlowLayout());
+        toDos.setBackground(Global.getSecondcolor());
+        toDos.setOpaque(true);
         Box toDoList = new Box(BoxLayout.Y_AXIS);
-        toDoList.setBackground(Global.getSecondcolor());
-        toDoList.setOpaque(true);
+        toDos.add(toDoList);
         
         //Controll
       	button.addActionListener(new KlickListener(this, button, toDoList, input));
@@ -67,7 +70,7 @@ public class MainPanel extends JPanel {
         
         
         this.add(center);
-        this.add(toDoList);
+        this.add(toDos);
         
 
     }
