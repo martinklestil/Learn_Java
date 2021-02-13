@@ -12,10 +12,12 @@ public final class Global {
 	private static String versionDate = "13.02.2021";
 	
 	//Colors
-	private static Color maincolor = Color.decode("#276678");
-	private static Color maincolorLight = Color.decode("#1687a7");
+	private static Color maincolor = Color.decode("#75cfb8");
+	private static Color maincolorLight = Color.decode("#bbdfc8");
 	private static Color secondcolor = Color.decode("#ffc478");
 	private static Color secondcolorLight = Color.decode("#ffee93");
+	private static Color grey = Color.decode("#eef8ff");
+	private static Color greyLight = Color.decode("#dff2ff");
 	private static Color white = Color.decode("#ffffff");
 	private static Color black = Color.decode("#000000");
 	private static String defaultFont = "Helvetica";
@@ -61,6 +63,16 @@ public final class Global {
 	public static String getDefaultFontSize() {
 		return defaultFontSize;
 	}
+
+	public static Color getGrey() {
+		return grey;
+	}
+
+	public static Color getGreyLight() {
+		return greyLight;
+	}
+	
+	
 	
 
 }

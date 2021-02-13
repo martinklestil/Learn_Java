@@ -39,14 +39,14 @@ public class MainPanel extends JPanel {
         inputPanel.setLayout(new FlowLayout());
         
         JTextField input = new JTextField("Add To Do", 30);
-        input.setForeground(Global.getMaincolor());
+        input.setForeground(Global.getBlack());
         input.setBackground(Global.getSecondcolorLight());
         input.setFont(new Font(Global.getDefaultFont(), Font.PLAIN, 16));
         input.setBorder(BorderFactory.createLineBorder(Global.getBlack()));
         
         JButton button = new JButton(" + ");
-        button.setForeground(Global.getSecondcolor());
-        button.setBackground(Global.getSecondcolorLight());
+        button.setForeground(Global.getGrey());
+        button.setBackground(Global.getSecondcolor());
         button.setFont(new Font(Global.getDefaultFont(), Font.PLAIN, 16));
         button.setBorder(BorderFactory.createLineBorder(Global.getBlack()));
         

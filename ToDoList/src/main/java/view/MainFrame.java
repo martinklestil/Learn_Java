@@ -21,7 +21,7 @@ public class MainFrame extends JFrame  {
      	this.add(footerPanel, BorderLayout.SOUTH);
         this.setTitle(titel);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(1000,800);
+        this.setSize(600,400);
         this.setVisible(true);
     }
 }
