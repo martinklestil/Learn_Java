@@ -22,6 +22,7 @@ public final class Global {
 	private static Color black = Color.decode("#000000");
 	private static String defaultFont = "Helvetica";
 	private static String defaultFontSize = "16";
+	private static int counter = 0;
 
 
 	public String getVersion() {
@@ -71,6 +72,12 @@ public final class Global {
 	public static Color getGreyLight() {
 		return greyLight;
 	}
+
+	public static int getCounter() {
+		counter = counter + 1;
+		return counter;
+	}
+	
 	
 	
 	

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class ToDoImpl implements ToDoDao{
 	
-	private ArrayList<ToDo> toDos;
+	private final ArrayList<ToDo> toDos;
 	
 	public ToDoImpl() {
 		toDos = new ArrayList<>();
@@ -16,21 +16,21 @@ public class ToDoImpl implements ToDoDao{
 	}
 
 	@Override
-	public ToDo getToDobyId(int id) {
+	public ToDo getToDoById(int id) {
 		return toDos.get(id);
 	}
 
 	@Override
 	public void saveToDos(ToDo todo) {
 		toDos.add(todo);
+		System.out.println("Save " + todo);
 		
 	}
 
 	@Override
 	public void deletToDos(ToDo todo) {
-		System.out.println("Delet Function");
-		toDos.remove(todo);
-		
+		System.out.println("Delet Function " + todo);
+		toDos.remove(todo);		
 	}
 
 }
