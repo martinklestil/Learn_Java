@@ -27,6 +27,7 @@
     
   </build>
   <dependencies>
+  	<!--  Servlet -->
   	<dependency>
   		<groupId>javax.servlet</groupId>
   		<artifactId>javax.servlet-api</artifactId>
@@ -40,6 +41,21 @@
 	    <version>2.2.1-b03</version>
 	    <scope>provided</scope>
 	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc -->
+	<dependency>
+	    <groupId>org.xerial</groupId>
+	    <artifactId>sqlite-jdbc</artifactId>
+	    <version>3.34.0</version>
+	</dependency>
+	<!-- Datenbank -->
+	<!-- https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc -->
+	<dependency>
+	    <groupId>org.xerial</groupId>
+	    <artifactId>sqlite-jdbc</artifactId>
+	    <version>3.34.0</version>
+	</dependency>
+	
+	
   	
   </dependencies>
 </project>
