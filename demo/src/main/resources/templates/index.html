@@ -1,22 +1,25 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+	<link rel="stylesheet" href="/css/style.css">
 
 </head>
 <body>
-	<h2>Hello World!</h2>
-	<p th:text="${title}">Hier kommt der Name meiner Anwendung </p>
-	<table>
-		<thead>
-			<tr>
-				<th>Start</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr th:each="timeEntry : ${timeEntries}">
-				<td th:text="${timeEntry.start}">Zeit</td>
-			</tr>
-		</tbody>
-	</table>
+	<div class="container">
+		<h2>Hello World!</h2>
+		<p th:text="${title}">Hier kommt der Name meiner Anwendung </p>
+		<table>
+			<thead>
+				<tr>
+					<th>Start</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="timeEntry : ${timeEntries}">
+					<td th:text="${timeEntry.start}">Zeit</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 </body>
 </html>

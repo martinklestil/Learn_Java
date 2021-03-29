@@ -1,0 +1,56 @@
+/*CSS variables*/
+
+:root {
+    --maincolor: #75cfb8;
+    --maincolor-light: #bbdfc8;
+
+    --secondcolor: #ffc478;
+    --secondcolor-light: #f7cc95;
+
+    --color-grey: #eef8ff;
+    --color-grey-light: #dff2ff;
+
+    --color-white: white;
+    --color-black: black;
+    
+    --default-fontsize: 1.6rem;
+  }
+
+/* Default Values */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /*10px/16px = 62.5% -> 1rem = 10px */
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--black);
+    font-weight: 300;
+    line-height: 1.6;
+    font-size: var(--default-fontsize);
+    display: grid;
+    justify-content: center;
+    
+}
+
+/* Start Styling */
+
+.container {
+    display: grid;
+    padding: 2rem;
+    justify-content: center;
+    width: 50vw;
+    height: auto;
+    background-color: var(--maincolor);
+    color: var(--color-white);
+    
+}

@@ -9,15 +9,19 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class MainController {
+public class TimeEntriesController {
 	
 	public List<TimeEntry> timeEntries = new LinkedList<>();
 	
-	public MainController() {
+	public TimeEntriesController() {
+		timeEntries.add(new TimeEntry(LocalDateTime.now()));
+		timeEntries.add(new TimeEntry(LocalDateTime.now()));
+		timeEntries.add(new TimeEntry(LocalDateTime.now()));
+		timeEntries.add(new TimeEntry(LocalDateTime.now()));
 		timeEntries.add(new TimeEntry(LocalDateTime.now()));
 	}
 	
-	@GetMapping("/index")
+	@GetMapping("/timeEntries")
 	public ModelAndView index() {
 		
 		// Business Logik
