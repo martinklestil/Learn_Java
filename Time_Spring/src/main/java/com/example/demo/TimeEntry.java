@@ -1,54 +1,36 @@
 package com.example.demo;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
+
+//Repository
+@Entity
+@Data
+@NoArgsConstructor
+@RequiredArgsConstructor
 
 public class TimeEntry {
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	
-	private final LocalDateTime start;
+	@NonNull
+	private LocalDateTime start;
 	
-	private LocalDate stop;
+	private LocalDateTime stop;
 	
 	private String description;
 	
-	//Ich habe hier auf Lombok verzichtet.
-
-	public TimeEntry(LocalDateTime start) {
-		super();
-		this.start = start;
-	}
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public LocalDate getStop() {
-		return stop;
-	}
-
-	public void setStop(LocalDate stop) {
-		this.stop = stop;
-	}
-
-	public String getDescription() {
-		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
-	}
-
-	public LocalDateTime getStart() {
-		return start;
-	}
 	
 	
 }
